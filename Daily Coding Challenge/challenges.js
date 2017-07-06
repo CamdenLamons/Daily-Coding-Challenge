@@ -33,5 +33,21 @@ var challenges = [
     "Create a website that uses the date.",
     "Create a count down website.",
     "Create a website about something you love.",
-    "Create a website about your coutry."
+    "Create a website about your coutry.",
+    "Create a website with a button in it.",
+    "Create a website the grandma could use.",
+    "Work on what ever you wont to.",
+    "Try something you haven't done before.",
+    "Create a website that does something in the background.",
+    "Create something that uses objects",
+    "Make abstract art using code.",
+    "Create a card using code.",
+    "Create a templete website.",
+    "Create an idle.",
+    "Create a website about coding.",
+    "Make or update your portfilio website.",
+    "Create a website in less than 100 lines of code.",
+    "Make a website that does not go off the screen.",
+    "Make a website for your favorite place to go.",
+    "Create a website that stores data."
     ]
