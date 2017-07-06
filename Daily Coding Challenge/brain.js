@@ -27,7 +27,7 @@ var rand = 0
 
 // cctext
 // in the middle of the screen
-let ccNode = document.getElementById("codingChallengeText");
+let ccNode = document.getElementById("codingChallenge");
 
 // update function
 // updates the cctext (coding challenge text)
