@@ -4,10 +4,14 @@
         <title>Daily Coding Challenge</title>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
-    <body>
+    <body onload="update()">
         <div id="mainHeading">Your Daily Coding Challenge Is</div>
-        <div id="codingChallenge">Challenge  Here</div>
-        <button id="completedButton">Completed</button>
+        <div id="codingChallenge">
+            <span id="codingChallengeText"></span>
+        </div>
+        <button id="completedButton" onclick="update">Completed</button>
         <div id="infoParagraph">Click the complete. button to mark challenge as completed.</div>
+
+        <script src="brain.js"></script>
     </body>
 </html>
