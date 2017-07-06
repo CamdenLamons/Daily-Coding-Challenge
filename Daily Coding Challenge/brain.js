@@ -20,6 +20,8 @@ saveDate = localStorage.savedDate
 var saveCC = "";
 if(!localStorage.savedCC){localStorage.setItem("savedCC",saveCC);}
 saveCC = localStorage.savedCC
+// an random number
+var rand = 0
 
 // nodes
 
@@ -32,16 +34,22 @@ let ccNode = document.getElementById("codingChallengeText");
 function update(){
     // checks if the save date is no the same to todays date
     if(todaysDate != saveDate){
-        ccNode.innerText = "Dates Not Equal";
+        rand = Math.floor(Math.random() * challenges.length)
+        saveCC = String(rand)
+        localStorage.savedCC = saveCC
         saveDate = todaysDate
         localStorage.savedDate = saveDate;
+        ccNode.innerHTML = challenges[saveCC]
     }
     // checks if savecc is equal to nothing
     else if(saveCC == ""){
-        ccNode.innerText = "Has No CC Yet"
+        rand = Math.floor(Math.random() * challenges.length)
+        saveCC = String(rand)
+        localStorage.savedCC = saveCC
+        ccNode.innerText = challenges[saveCC]
     }
     // else runs if the date is the save as today and savecc is not equal to nothing
     else{
-        ccNode.innerText = "Display CC For The Day"
+        ccNode.innerText = challenges[saveCC]
     }
 }
